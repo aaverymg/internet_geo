@@ -1,0 +1,39 @@
+body {
+	background-color: Linen;
+	margin: auto;
+	width: 50%;
+	font-family: "Tahoma";
+	text-align: justify;
+}
+
+.header {
+	font-family: "Tahoma";
+}
+
+.menu {
+	background-color: Wheat;
+	padding: 5px 10px;
+}
+
+img {
+	max-width:  50%;
+	height:  auto;
+}
+
+
+.photo {
+	display: flex;
+	align-items: flex-end;
+	gap: 10px;
+	text-align: justify;
+	text-align-last: right;
+}
+
+#list {
+	font-family: "Courier New";
+}
+
+#caption {
+	text-align: justify;
+	color: red;
+}
