@@ -1,18 +1,16 @@
 body {
-	background-color: Linen;
-	margin: auto;
-	width: 50%;
+	background-color: seashell;
 	font-family: "Tahoma";
 	text-align: justify;
+	color: darkslategray;
 }
 
-.header {
-	font-family: "Tahoma";
+a:visited {
+	color: teal;
 }
 
-.menu {
-	background-color: Wheat;
-	padding: 5px 10px;
+hr {
+	color: darkslategray;
 }
 
 img {
@@ -20,6 +18,23 @@ img {
 	height:  auto;
 }
 
+.header {
+	font-family: "Tahoma";
+	margin: auto;
+	width: 50%;
+}
+
+.menu {
+	background-color: papayawhip;
+	padding: 10px 20px;
+	margin: right;
+}
+
+.assignment {
+	padding: 5px 10px;
+	margin: auto;
+	width: 50%;
+}
 
 .photo {
 	display: flex;
@@ -27,6 +42,15 @@ img {
 	gap: 10px;
 	text-align: justify;
 	text-align-last: right;
+	width: 50%;
+	margin: auto;
+}
+
+.table {
+	display: flex;
+	padding: 0px 10px;
+	width: 100%;
+	justify-content: space-evenly;
 }
 
 #list {
@@ -36,4 +60,18 @@ img {
 #caption {
 	text-align: justify;
 	color: red;
+}
+
+#ascii {
+	background-color: papayawhip;
+    display: block;
+    font-size: 7px;
+    text-align: center;
+    font-family: Ubuntu Mono, monospace !important;
+    text-rendering: optimizeSpeed;
+    padding:5px 10px;
+}
+
+#prompt {
+	background-color: papayawhip;
 }
