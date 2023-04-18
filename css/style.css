@@ -5,7 +5,7 @@ body {
 	color: darkslategray;
 }
 
-a:visited {
+a, a:visited {
 	color: teal;
 }
 
@@ -16,6 +16,15 @@ hr {
 img {
 	max-width:  50%;
 	height:  auto;
+}
+
+button {
+	background-color: teal;
+	color: papayawhip;
+	border: none;
+	font-size: 15px;
+	padding: 5px;
+
 }
 
 .header {
@@ -79,4 +88,8 @@ img {
 #slides {
 	height: 500px;
 	width: 100%;
+}
+
+#barchart {
+	background-color: slategray;
 }

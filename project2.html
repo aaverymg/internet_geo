@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Project 2</title>
+    <link rel="stylesheet" href="css\style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="js/interaction.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <h1> <a href="https://internet-geographies.netlify.app/#/" target="_blank">Internet Geographies</a></h1>
+        <hr>
+        <h4><a href="index.html">Home</a></h4>
+        <h3> Project 2</h3>
+    </div>
+    <div class="assignment" id="prompt">
+        <h3>Data Storytelling: Internet Speed</h3>
+    </div>
+    <br>
+
+    <div class="assignment" id="buttons">
+        <button id="togglemap">Show map</button>
+        <button id="togglechart">Show bar chart</button>
+    </div>
+
+    <div class="assignment" id="feltmap">
+        <iframe id="upfMap" width="100%" height="450" frameborder="0" title="Felt Map"
+            src="https://felt.com/embed/map/Internet-Speed-Up-fixed-SopDiISrQ8iVNBXLN7QqMB?lat=36.084661&lon=-97.572551&zoom=3.47"></iframe>
+        <iframe id="downfMap" width="100%" height="450" frameborder="0" title="Felt Map"
+            src="https://felt.com/embed/map/Internet-Speed-Upload-fixed-UD27H3wkTO6e9ATM7uwPmVC?lat=37.523785&lon=-95.739973&zoom=3.47"></iframe>
+        <iframe id="upmMap" width="100%" height="450" frameborder="0" title="Felt Map"
+            src="https://felt.com/embed/map/Internet-Speed-copy-copy-copy-fxsDcOlfSyKuVIKVxyl09BC?lat=37.671955&lon=-97.435155&zoom=3.36"></iframe>
+        <iframe id="downmMap" width="100%" height="450" frameborder="0" title="Felt Map"
+            src="https://felt.com/embed/map/Internet-Speed-copy-copy-I1JLwa6WTIG8CGTP9AB9BcfC?lat=36.441633&lon=-101.241173&zoom=3"></iframe>
+    </div>
+
+    <div class="assignment" id="mapbuttons">
+        <button id="upf">Up (fixed)</button>
+        <button id="downf">Down (fixed)</button>
+        <button id="upm">Up (mobile)</button>
+        <button id="downm">Down (mobile)</button>
+    </div>
+
+    <div class="assignment" id="barchart">
+        <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/dqZRM/embed.js?v=2"
+            charset="utf-8"></script><noscript><img src="https://datawrapper.dwcdn.net/dqZRM/full.png"
+                alt="" /></noscript>
+    </div>
+    <br>
+
+    <div class="assignment" id="prompt">
+        <p>For this project, I looked at internet speed data across the country. I'm originally from rural Vermont, where comparatively few people have access to high speed internet. Not having access to a stable or reliable internet connection made my life much harder, especially during the pandemic. Because of this, I wanted to look at the numbers to see just how much internet access varies around the country. Once I had assembled the data, I used Felt to display the data by state on a map based on a few different metrics, and I used datawrapper to display the data as a stacked bar chart. There were some interesting outliers (South Carolina having a significantly higher fixed upload speed, for example), but generally the states with consistently lower speeds are more rural. I was also surprised by download speeds being generally worse on average- I had assumed that generally download speeds were prioritized. I was also expecting states with larger population centers to have much more consistently high speeds, but that was only sometimes the case. It seems like generally mobile speeds are higher in states with large cities, but this is definitely not always the case. My overall goal was just to create a few different visualizations of this data, because many people don’t even realize internet access is an equity issue. </p>
+    </div>
+    <br>
+
+    <hr class="header">
+    <footer class="header">Data Courtesty <a href="https://www.speedtest.net/performance/united-states">Speedtest by
+            Ookla</a>
+    </footer>
+</body>
+
+</html>
