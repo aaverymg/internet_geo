@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+    <title>Final Project</title>
+
+    <link rel="stylesheet" href="css\style.css">
+
+    <script src="js/final.js" type="text/javascript"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="js/interaction.js" type="text/javascript"></script>
+
+    <style type="text/css">
+        #map {
+            width: 800px;
+            height: 500px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1> <a href="https://internet-geographies.netlify.app/#/" target="_blank">Internet Geographies</a></h1>
+        <hr>
+        <h4><a href="index.html">Home</a></h4>
+    </div>
+
+    <div class="assignment" id="prompt">
+        <h3>Final Project: Communication Data Mapping</h3>
+    </div>
+
+    <br>
+    <div class="header" id="map">
+        <iframe src="https://kepler.gl/demo/map?mapUrl=https://dl.dropboxusercontent.com/s/jtd2gh6k8jwrnqy/keplergl_j6vxzx.json" id="map"> </iframe>
+      </div>
+    <br>
+    <footer class="header">
+        Map created in Kepler.gl based on density and number of individual interactions
+    </footer>
+    <br>
+
+    <div id="map">
+        <iframe id="map" src="https://observablehq.com/embed/e063e99d8db57164?cell=*"></iframe>
+    </div>
+    <br>
+    <footer class="header">
+        Visualization created with D3.js in <a href="https://observablehq.com/" target="_blank">Observable</a>
+        <hr>
+        Green = Avery<br>
+        Blue = Communicated over Discord<br>
+        Orange = Communicated over Email<br>
+        Teal = Communicated over Instagram<br>
+        Red = Communicated over text
+    </footer>
+    <br>
+
+    <div class="assignment" id="buttons">
+        <button id="togglewriteup">Show writeup</button>
+        <button id="togglesource">Show sources</button>
+    </div>
+
+    <div class="assignment" id="writeup">
+        <p>Taking inspiration from projects we looked at throughout the semester like Mimi Onuoha’s “Pathways”, I wanted to collect and then map out my own digital communication data. The majority of my communication is done through digital platforms, and I wanted to explore the potential of visualizing these largely intangible communication networks.<br><br>
+
+            Initially, I wanted to track all of my internet traffic for 24 hours. However, I tested this using a network analyzer/packet sniffer called WireShark at a much smaller scale (1 hour) and got way more data than I could feasibly process (the CSV data file had 250,000 entries and opening it almost crashed my computer), so I decided to shift focus slightly.<br><br>
+            
+            I instead manually collected my data - every time I had a conversation with someone, I took note. I kept track of the number of conversations (although I’m wishing I had tracked the number of messages), as well as the platform that the interaction happened over. It’s worth noting that this data would have looked very different had I been tracking on a different day; I tracked my data on a Sunday, while I was preparing for a final presentation and working on a paper for most of the day. This meant that I was doing almost no in-person communication, so I had more data than I likely would from a typical day. Had I tracked on another day of the week, the data would have also included things like communication for work or classes. I considered doing another day of data collection, but because I was tracking everything manually, I struggled to remember to record all of my communication data while actively doing other things with my day.<br><br>
+            
+            My goal with this project was to think about different ways to interpret this idea of “internet visualization”. Originally, I created a map using Leaflet that shows the locations of everyone I communicated with (or at least the nearest major city) to show geographic data trends. However, I ended up switching it out for a Kepler heatmap, which better represented trends in the data. On the Leaflet map, you had to zoom in really close to get a sense of how many individual points were in the same region. With this visualization, I wanted to explore representations of the physicality of the internet.<br><br>
+            
+            My other visualization aims to represent more abstract and conceptual ideas of the “space” of the internet. This “force graph” is done using D3.js, running in a tool called Observable. I created an interactive chart in which every node represents a person, and all of the nodes are connected to show spatial and personal relationships between people. The resulting clusters of nodes show how all of these people are connected to each other. For instance, the giant cluster of interconnected blue dots is a large Discord server with many of my friends. Many of the smaller clusters are group chats with friends. One of the most interesting components to me is the individual nodes that aren’t part of any larger clusters - these are either people I’m not close with at all, or am very close with. One of these isolated nodes is a professor I sent one email to, but one of the other isolated nodes is my roommate. It’s really fascinating to see a sample of my social life visually mapped out in this format. Online space tends to exist in a weird gray area in which it lacks physical space or materiality, but also can be visualized and represented as if it physically exists. There are definitely other ways to interpret this as well- I could have mapped out the websites I used, or the servers I connected to, or any other number of possibilities.
+            </p>
+    </div><br>
+
+    <div class="assignment" id="sources">
+        <h3>Inspired by:</h3>
+        <ul>
+            <li><a href="https://mimionuoha.com/pathways">Mimi Onuoha's "Pathways"</a></li>
+            <li><a href="https://www.opte.org/the-internet">Opte's "The Internet"</a></li>
+            <li><a href="http://internet-map.net/">The Internet Map</a></li>
+            <li>“Reimaging Internet Geographies” by Angela Xiao Wu and Harsh Taneja</li>
+            <li>"The Second Self" by Sherry Turkle</li>
+        </ul>
+    </div>
+
+
+</body>
+
+</html>

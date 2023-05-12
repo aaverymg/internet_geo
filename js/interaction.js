@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
     $("#feltmap").hide();
 
@@ -6,49 +6,61 @@ $(document).ready(function(){
 
     $("#mapbuttons").hide();
 
+    $("#sources").hide();
+
+    $("#writeup").hide();
+
     $("#downfMap").hide();
     $("#downmMap").hide();
     $("#upmMap").hide();
 
-    $("#togglemap").click(function(){
+    $("#togglesource").click(function () {
+        $("#sources").toggle();
+    });
+
+    $("#togglewriteup").click(function () {
+        $("#writeup").toggle();
+    });
+
+    $("#togglemap").click(function () {
         $("#feltmap").toggle();
         $("#mapbuttons").toggle();
         $("#barchart").hide();
-         });
-  
-    $("#togglechart").click(function(){
+    });
+
+    $("#togglechart").click(function () {
         $("#barchart").toggle();
         $("#feltmap").hide();
         $("#mapbuttons").hide();
-        });
+    });
 
-    $("#downf").click(function(){
+    $("#downf").click(function () {
         $("#downfMap").toggle();
         $("#upfMap").hide();
         $("#upmMap").hide();
         $("#downmMap").hide();
-        });
-    
-    $("#upf").click(function(){
+    });
+
+    $("#upf").click(function () {
         $("#upfMap").toggle();
         $("#downfMap").hide();
         $("#upmMap").hide();
         $("#downmMap").hide();
-        });
-    
+    });
 
-    $("#upm").click(function(){
+
+    $("#upm").click(function () {
         $("#upmMap").toggle();
         $("#upfMap").hide();
         $("#downfMap").hide();
         $("#downmMap").hide();
-        });
+    });
 
-    $("#downm").click(function(){
+    $("#downm").click(function () {
         $("#downmMap").toggle();
         $("#upfMap").hide();
         $("#upmMap").hide();
         $("#downfMap").hide();
-        });
+    });
 
-  });
+});
